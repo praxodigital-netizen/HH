@@ -575,8 +575,8 @@ function ServicesSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
   { img: IMAGES.mriRoom, label: 'MRI Machine', imageClass: 'object-center' },
-  { img: IMAGES.ctScanRoom, label: 'CT Scan', imageClass: 'object-[center_65%]' },
-  { img: IMAGES.opgRoom, label: 'OPG (Digital Panoramic X-Ray)', imageClass: 'object-[center_68%]' },
+  { img: IMAGES.ctScanRoom, label: 'CT Scan', imageClass: 'object-[center_75%]' },
+  { img: IMAGES.opgRoom, label: 'OPG (Digital Panoramic X-Ray)', imageClass: 'object-[center_78%]' },
 ].map((item, i) => (
   <div key={i} className="relative rounded-2xl overflow-hidden group h-56">
     <img
