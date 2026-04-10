@@ -574,12 +574,16 @@ function ServicesSection() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { img: IMAGES.mriRoom, label: 'MRI Machine' },
-              { img: IMAGES.ctScanRoom, label: 'CT Scan' },
-              { img: IMAGES.opgRoom, label: 'OPG (Digital Panoramic X-Ray)' },
-            ].map((item, i) => (
-              <div key={i} className="relative rounded-2xl overflow-hidden group h-56">
-                <img src={item.img} alt={item.label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+  { img: IMAGES.mriRoom, label: 'MRI Machine', imageClass: 'object-center' },
+  { img: IMAGES.ctScanRoom, label: 'CT Scan', imageClass: 'object-[center_65%]' },
+  { img: IMAGES.opgRoom, label: 'OPG (Digital Panoramic X-Ray)', imageClass: 'object-[center_68%]' },
+].map((item, i) => (
+  <div key={i} className="relative rounded-2xl overflow-hidden group h-56">
+    <img
+      src={item.img}
+      alt={item.label}
+      className={`w-full h-full object-cover ${item.imageClass} group-hover:scale-105 transition-transform duration-500`}
+    />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <span className="text-white text-sm font-semibold">{item.label}</span>
