@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue-primary: #0369a1;
+  --blue-dark: #0c4a6e;
+  --blue-light: #e0f2fe;
+  --blue-accent: #0ea5e9;
+  --grey-light: #f8fafc;
+  --grey-mid: #f1f5f9;
+  --white: #ffffff;
+  --text-dark: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-body);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: var(--text-dark);
+}
+
+.gradient-blue {
+  background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0ea5e9 100%);
+}
+
+.gradient-soft {
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #0369a1, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+.animate-delay-400 { animation-delay: 0.4s; }
+.animate-delay-500 { animation-delay: 0.5s; }
+
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(3, 105, 161, 0.15);
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-8 py-3.5 rounded-full font-semibold text-white transition-all duration-300;
+  background: linear-gradient(135deg, #0369a1, #0ea5e9);
+  box-shadow: 0 4px 15px rgba(3, 105, 161, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 25px rgba(3, 105, 161, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center px-8 py-3.5 rounded-full font-semibold transition-all duration-300 border-2 border-white/30 text-white backdrop-blur-sm;
+}
+
+.btn-outline:hover {
+  @apply bg-white/20 border-white/60;
+  transform: translateY(-2px);
+}
+
+.section-padding {
+  @apply py-20 md:py-28 px-4 sm:px-6 lg:px-8;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
