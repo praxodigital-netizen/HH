@@ -39,7 +39,7 @@ const DOCTORS = [
     qualification: 'MBBS, M.S.',
     role: 'Senior Surgeon & Founder',
     description: 'Senior Surgeon with extensive experience in general and laparoscopic procedures. With over two decades of surgical expertise, he has successfully performed thousands of complex surgeries.',
-    image: '/assets/dr-hemant-gupta.jpeg',
+    image: '/assets/Dr Hemant New.jpeg',
   },
   {
     name: 'Dr. Kokila Gupta',
