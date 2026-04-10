@@ -46,7 +46,7 @@ const DOCTORS = [
     qualification: 'MBBS, MD',
     role: 'Radiologist',
     description: 'Specialist in advanced diagnostic imaging including MRI, CT Scan and Ultrasound. Her precision in diagnostics ensures accurate and timely patient assessments.',
-    image: '/assets/dr-kokila-gupta.jpeg',
+    image: '/assets/Dr Kokila New.jpeg',
   },
   {
     name: 'Dr. Anurag Garg',
