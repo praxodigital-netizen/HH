@@ -582,7 +582,7 @@ function ServicesSection() {
     <img
       src={item.img}
       alt={item.label}
-      className={`w-full h-full object-cover ${item.imageClass} transition-transform duration-500`}
+      className={`w-full h-full object-cover ${item.imageClass} group-hover:scale-105 transition-transform duration-500`}
     />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
