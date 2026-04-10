@@ -576,7 +576,7 @@ function ServicesSection() {
             {[
   { img: IMAGES.mriRoom, label: 'MRI Machine', imageClass: 'object-center' },
   { img: IMAGES.ctScanRoom, label: 'CT Scan', imageClass: 'object-[center_25%]' },
-  { img: IMAGES.opgRoom, label: 'OPG (Digital Panoramic X-Ray)', imageClass: 'object-[center_20%]' },
+  { img: IMAGES.opgRoom, label: 'OPG (Digital Panoramic X-Ray)', imageClass: 'object-[center_25%]' },
 ].map((item, i) => (
   <div key={i} className="relative rounded-2xl overflow-hidden group h-56">
     <img
