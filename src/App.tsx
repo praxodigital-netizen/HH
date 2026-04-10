@@ -24,7 +24,7 @@ const IMAGES = {
   historySection: '/assets/history-section.jpeg',
   uroOtDoor: '/assets/uro-ot-door.jpeg',
   generalOtDoor: '/assets/general-ot-door.jpeg',
-  sterilization: '/assets/sterilization-room.jpeg'
+  sterilization: '/assets/sterilization-room.jpeg',
   pharmacy: '/assets/pharmacy.jpeg',
   ambulance: '/assets/ambulance.jpg',
   mriRoom: '/assets/mri-room.jpeg',
