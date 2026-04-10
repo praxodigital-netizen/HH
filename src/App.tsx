@@ -14,7 +14,7 @@ const LOGO_URL = '/assets/logo.jpeg';
 const IMAGES = {
   hero: '/assets/hospital-exterior.jpeg',
   heroBg: '/assets/hero-bg.jpeg',
-  reception: '/assets/reception.jpeg',
+  reception: '/assets/Front from outside.jpeg',
   otRoom1: '/assets/ot-room-1.jpeg',
   otRoom2: '/assets/ot-room-2.jpeg',
   otRoom3: '/assets/ot-room-3-new.jpeg',
