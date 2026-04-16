@@ -324,7 +324,7 @@ function HeroSection() {
           <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4">
             {[
               { icon: Activity, text: '40,000+ Surgeries' },
-              { icon: Zap, text: '24×7 Emergency' },
+              { icon: Zap, text: 'Emergency Services Available' },
               { icon: Stethoscope, text: 'Expert Doctors' },
             ].map((item, i) => (
               <span key={i} className="flex items-center gap-2.5 text-sm text-slate-500 font-medium">
@@ -402,7 +402,7 @@ function AboutSection() {
                 { icon: Shield, text: 'Patient Safety First' },
                 { icon: Award, text: 'Certified & Registered' },
                 { icon: Users, text: 'Expert Medical Team' },
-                { icon: Activity, text: '24×7 Emergency Care' },
+                { icon: Activity, text: 'Emergency Services Available' },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 p-3 rounded-xl bg-primary-50/50 border border-primary-100/50">
                   <item.icon className="w-5 h-5 text-primary-600 flex-shrink-0" />
@@ -663,7 +663,7 @@ function FacilitiesSection() {
   const facilities = [
     { icon: BedDouble, name: 'HDU (High Dependency Unit)', desc: 'Specialized care for patients requiring close monitoring', image: IMAGES.otRoom1 },
     { icon: Building2, name: 'Indoor Patient Facility', desc: 'Comfortable and well-equipped in-patient rooms', image: IMAGES.generalWard },
-    { icon: Truck, name: 'Ambulance Service', desc: '24×7 emergency ambulance with trained paramedics', image: IMAGES.ambulance },
+    { icon: Truck, name: 'Ambulance Service', desc: 'Ambulance service with trained paramedics', image: IMAGES.ambulance },
     { icon: Scan, name: 'MRI & CT Scan', desc: 'Advanced imaging for precise diagnostics', image: IMAGES.mriRoom },
     { icon: Pill, name: 'Pharmacy', desc: 'In-house pharmacy for patient convenience', image: IMAGES.pharmacy },
     { icon: Coffee, name: 'Canteen', desc: 'On-premise canteen for patients and visitors', image: IMAGES.canteen },
@@ -706,7 +706,7 @@ function WhyChooseUsSection() {
   const reasons = [
     { icon: Award, value: '20+', label: 'Years of Experience', desc: 'Two decades of trusted healthcare excellence' },
     { icon: Heart, value: '40,000+', label: 'Surgeries Performed', desc: 'Proven track record of surgical success' },
-    { icon: Zap, value: '24×7', label: 'Emergency Services', desc: 'Round-the-clock critical care availability' },
+    { icon: Zap, value: 'Medical', label: 'Emergency Services', desc: 'Round-the-clock critical care availability' },
     { icon: Scan, value: 'Advanced', label: 'Diagnostic Facilities', desc: 'MRI, CT, X-Ray and more under one roof' },
     { icon: Users, value: '6+', label: 'Specialist Doctors', desc: 'Highly qualified medical professionals' },
     { icon: Shield, value: '100%', label: 'Hygiene & Patient Care', desc: 'Uncompromising focus on cleanliness' },
@@ -809,7 +809,7 @@ function ContactSection() {
             <a href={CONTACT.phoneLink} className="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
               {CONTACT.phoneFormatted}
             </a>
-            <p className="text-slate-400 text-xs mt-2">Available 24×7</p>
+            <p className="text-slate-400 text-xs mt-2">Emergency Services Available</p>
           </div>
 
           <div className="bg-gradient-to-br from-primary-50 to-sky-50 rounded-2xl p-8 text-center border border-primary-100/50 hover:shadow-lg transition-all duration-300">
