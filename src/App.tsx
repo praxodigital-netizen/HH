@@ -347,7 +347,7 @@ function HeroSection() {
               {[
                 { value: 20, suffix: '+', label: 'Years of Experience' },
                 { value: 40000, suffix: '+', label: 'Surgeries Performed' },
-                { value: Medical, suffix: '+', label: 'Emergency Services' },
+                { value: 24, suffix: '7', label: 'Emergency Services' },
                 { value: 6, suffix: '+', label: 'Specialist Doctors' },
               ].map((stat, i) => (
                 <div key={i} className="text-center">
