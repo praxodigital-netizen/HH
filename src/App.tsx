@@ -393,7 +393,7 @@ function AboutSection() {
                 With a proven track record of over <strong className="text-primary-700">40,000 major and minor surgeries</strong>, our institution stands as a testament to clinical excellence and surgical precision. Our dedicated team comprises highly trained surgeons, experienced paramedical staff, and compassionate nursing professionals — all committed to the highest standards of patient care.
               </p>
               <p>
-                The hospital offers <strong className="text-primary-700">round-the-clock emergency services</strong> supported by advanced diagnostic capabilities. We maintain rigorous standards of cleanliness, patient comfort and safety across every department, including our state-of-the-art operation theatres.
+                The hospital offers <strong className="text-primary-700">emergency services</strong> supported by advanced diagnostic capabilities. We maintain rigorous standards of cleanliness, patient comfort and safety across every department, including our state-of-the-art operation theatres.
               </p>
             </div>
 
@@ -706,7 +706,7 @@ function WhyChooseUsSection() {
   const reasons = [
     { icon: Award, value: '20+', label: 'Years of Experience', desc: 'Two decades of trusted healthcare excellence' },
     { icon: Heart, value: '40,000+', label: 'Surgeries Performed', desc: 'Proven track record of surgical success' },
-    { icon: Zap, value: 'Medical', label: 'Emergency Services', desc: 'Round-the-clock critical care availability' },
+    { icon: Zap, value: 'Medical', label: 'Emergency Services', desc: 'Critical care availability' },
     { icon: Scan, value: 'Advanced', label: 'Diagnostic Facilities', desc: 'MRI, CT, X-Ray and more under one roof' },
     { icon: Users, value: '6+', label: 'Specialist Doctors', desc: 'Highly qualified medical professionals' },
     { icon: Shield, value: '100%', label: 'Hygiene & Patient Care', desc: 'Uncompromising focus on cleanliness' },
