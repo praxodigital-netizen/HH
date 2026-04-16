@@ -324,7 +324,7 @@ function HeroSection() {
           <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4">
             {[
               { icon: Activity, text: '40,000+ Surgeries' },
-              { icon: Zap, text: 'Emergency Services Available' },
+              { icon: Zap, text: 'Emergency Services' },
               { icon: Stethoscope, text: 'Expert Doctors' },
             ].map((item, i) => (
               <span key={i} className="flex items-center gap-2.5 text-sm text-slate-500 font-medium">
