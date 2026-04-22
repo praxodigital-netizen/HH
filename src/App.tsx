@@ -83,7 +83,7 @@ const DOCTORS = [
   qualification: 'MBBS, MD (Medicine), DM, Gastro',
   role: 'Consultant Gastroenterologist & Hepatologist',
   description: 'Specialist in gastroenterology and hepatology with experience in managing liver disorders and digestive system conditions. Special focus on endoscopy and colonoscopy-based evaluation and treatment.',
-  image: '/assets/dr-deepak-purohit.jpeg',
+  image: '/assets/dr-deepak-purohit.png',
   imageClass: 'object-cover object-[center_20%]',
 },
 {
@@ -91,7 +91,7 @@ const DOCTORS = [
   qualification: 'MBBS, D.Ortho, MRCS (England)',
   role: 'Orthopaedic & Regenerative Medicine Specialist',
   description: 'Specialist in orthopaedic care, arthritis management, ligament injuries, rheumatology and regenerative medicine-based treatment approaches, including PRP-related care.',
-  image: '/assets/dr-manish-agarwal.jpeg',
+  image: '/assets/dr-manish-agarwal.png',
   imageClass: 'object-cover object-[center_20%]',
 },
 ];
