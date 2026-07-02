@@ -108,7 +108,35 @@ const CONTACT = {
   mapUrl: 'https://maps.google.com/maps?q=Hemant+Hospital+Roorkee+Uttarakhand+247667&t=&z=16&ie=UTF8&iwloc=&output=embed',
   mapLink: 'https://maps.app.goo.gl/siB7d9bxpfUmVNn96',
 };
+const GOOGLE_REVIEW_LINK = 'https://www.google.com/search?num=10&sca_esv=47fdd52eba661d26&rlz=1C5CHFA_enIN1179IN1179&sxsrf=APpeQntA376QTPobPexHa4RkX--mpiRhzA:1782977392160&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_zv5EV-mSPgGnO1jN-q0bhPoX_2M3WM55rgcBJYgGrDGC2SXyVBahcgQRF484Xc6IVVSAPXIijiQCDinm_IkTieRlrYN&q=Hemant+Hospital+Reviews&sa=X&ved=2ahUKEwjqmuiwvLOVAxVXa2wGHSOnIOoQ0bkNegQIJRAF&biw=1280&bih=603&dpr=1';
 
+const REVIEWS = [
+  {
+    name: 'Mohd Faruk malik',
+    rating: 5,
+    review: 'All staff good and carefull thank you so much',
+  },
+  {
+    name: 'Anshu Saini',
+    rating: 5,
+    review: 'Anurag dr is good dr',
+  },
+  {
+    name: 'Rohit K',
+    rating: 5,
+    review: 'Thank you sir, the operation was good.',
+  },
+  {
+    name: 'Muneer Ahmad',
+    rating: 5,
+    review: 'Very good knowledge dr Hemant Gupta sir ji very copretive staff thank 😊 you',
+  },
+  {
+    name: 'Sameer Sameer malik',
+    rating: 5,
+    review: 'The operation was very good, the doctors were also very good, the staff was very good, all the facilities were available well.',
+  },
+];
 // ─── Hooks ──────────────────────────────────────────
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
@@ -807,6 +835,58 @@ function CertificationsSection() {
   );
 }
 
+// ─── Reviews Section ──────────────────────────────────────────
+function ReviewsSection() {
+  const { ref, isVisible } = useInView();
+
+  return (
+    <section className="py-24 bg-white" ref={ref}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeader
+          label="Google Reviews"
+          title="What Patients Say About Us"
+          subtitle="Real feedback shared by patients on Google."
+        />
+
+        <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory">
+            {REVIEWS.map((item, index) => (
+              <div
+                key={index}
+                className="min-w-[300px] md:min-w-[360px] bg-slate-50 rounded-3xl p-6 border border-slate-100 shadow-lg shadow-slate-200/50 snap-start"
+              >
+                <div className="text-yellow-400 text-lg mb-4">
+                  {'★'.repeat(item.rating)}
+                </div>
+
+                <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                  “{item.review}”
+                </p>
+
+                <div>
+                  <h4 className="font-semibold text-slate-900">{item.name}</h4>
+                  <p className="text-xs text-slate-400">Google Review</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <a
+              href={GOOGLE_REVIEW_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center gap-2 text-base !px-8 !py-3.5"
+            >
+              Write a Google Review
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ─── Contact Section ──────────────────────────────────────────
 function ContactSection() {
   const { ref, isVisible } = useInView();
@@ -1016,6 +1096,7 @@ export default function App() {
       <FacilitiesSection />
       <WhyChooseUsSection />
       <CertificationsSection />
+      <ReviewsSection />
       <ContactSection />
       <Footer />
       <BackToTop />
